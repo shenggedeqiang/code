@@ -37,3 +37,8 @@ while cap.isOpened():
 # 释放视频资源
 cap.release()
 cv2.destroyAllWindows()
+
+==================================
+如果你想处理实时视频（例如摄像头输入），只需要将 cv2.VideoCapture 改为摄像头设备的索引：
+
+cap = cv2.VideoCapture(0)  # 使用摄像头（0是默认摄像头）
